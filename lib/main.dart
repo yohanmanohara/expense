@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import'pages/welcome.dart'; // Ensure the correct file path
+import './pages/signin.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SigninOrSignupScreen(), // Load the screen here
+      home:  SignInScreen(), // Load the screen here
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'signin.dart';
 class SignUpScreen extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
 
@@ -116,33 +116,23 @@ class SignUpScreen extends StatelessWidget {
                             minimumSize: const Size(double.infinity, 48),
                             shape: const StadiumBorder(),
                           ),
-                          child: const Text("Sign in"),
+                          child: const Text("Sign Up"),
                         ),
                         const SizedBox(height: 16.0),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Forgot Password?',
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyMedium!
-                                .copyWith(
-                                  color: Theme.of(context)
-                                      .textTheme
-                                      .bodyLarge!
-                                      .color!
-                                      .withOpacity(0.64),
-                                ),
-                          ),
-                        ),
+                       
                         TextButton( 
-                          onPressed: () {},
+                           onPressed: () {
+                  Navigator.push(
+                    context,
+                   MaterialPageRoute(builder: (context) =>  SignInScreen()),
+                  );
+                },
                           child: Text.rich(
                             const TextSpan(
-                              text: "Don’t have an account? ",
+                              text: "Already have an account? ",
                               children: [
                                 TextSpan(
-                                  text: "Sign Up",
+                                  text: "Sign In",
                                   style: TextStyle(color: Color(0xFF00BF6D)),
                                 ),
                               ],

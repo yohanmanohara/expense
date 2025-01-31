@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'signup.dart';
 class SignInScreen extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
 
@@ -35,7 +35,7 @@ class SignInScreen extends StatelessWidget {
                       children: [
                         TextFormField(
                           decoration: const InputDecoration(
-                            hintText: 'Phone',
+                            hintText: 'Email',
                             filled: true,
                             fillColor: Color(0xFFF5FCF9),
                             contentPadding: const EdgeInsets.symmetric(
@@ -106,7 +106,12 @@ class SignInScreen extends StatelessWidget {
                           ),
                         ),
                         TextButton(
-                          onPressed: () {},
+                         onPressed: () {
+                   Navigator.push(
+                    context,
+                   MaterialPageRoute(builder: (context) =>  SignUpScreen()),
+                  );
+                     },
                           child: Text.rich(
                             const TextSpan(
                               text: "Don’t have an account? ",
