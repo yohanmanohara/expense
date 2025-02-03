@@ -1,8 +1,14 @@
+import 'package:expense/pages/login.dart';
 import 'package:flutter/material.dart';
-import './pages/signin.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
-  runApp(const MyApp());
+void main () async {
+  WidgetsFlutterBinding.ensureInitialized();
+await Firebase.initializeApp(
+  options: DefaultFirebaseOptions.currentPlatform,
+);
+runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -16,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:  SignInScreen(), // Load the screen here
+      home:  Login(), // Load the screen here
     );
   }
 }

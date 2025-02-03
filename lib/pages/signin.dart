@@ -5,6 +5,7 @@ class SignInScreen extends StatelessWidget {
 
   SignInScreen({super.key});
   @override
+  
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
@@ -109,7 +110,7 @@ class SignInScreen extends StatelessWidget {
                          onPressed: () {
                    Navigator.push(
                     context,
-                   MaterialPageRoute(builder: (context) =>  SignUpScreen()),
+                   MaterialPageRoute(builder: (context) =>  Signup()),
                   );
                      },
                           child: Text.rich(

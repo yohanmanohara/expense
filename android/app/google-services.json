@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "539527307364",
-    "project_id": "sudarma-apparel-stock-managing",
-    "storage_bucket": "sudarma-apparel-stock-managing.firebasestorage.app"
+    "project_number": "784809884242",
+    "project_id": "sudarma-apparel",
+    "storage_bucket": "sudarma-apparel.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:539527307364:android:d954a8721ed5bd0b75bf71",
+        "mobilesdk_app_id": "1:784809884242:android:9728ac058b00e22563bd8b",
         "android_client_info": {
           "package_name": "com.example.expense"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCiMb9BjxFqvojhsTowSO8JWKWYmYjAuxk"
+          "current_key": "AIzaSyAHW-SzLIOEUzTxjEGUHey17TXJlWF7yUU"
         }
       ],
       "services": {
