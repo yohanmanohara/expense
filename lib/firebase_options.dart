@@ -41,49 +41,49 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBKrxHhM03aSGeWJu7g7K0z8mzj507SKK8',
-    appId: '1:784809884242:web:411cba8f54e43f9c63bd8b',
-    messagingSenderId: '784809884242',
-    projectId: 'sudarma-apparel',
-    authDomain: 'sudarma-apparel.firebaseapp.com',
-    storageBucket: 'sudarma-apparel.firebasestorage.app',
-    measurementId: 'G-GNG4ZJ5ZKB',
+    apiKey: 'AIzaSyCWgAlhYfa4e3ihTDpZ5UGeZgkcro-HjHE',
+    appId: '1:499482163771:web:085097caf7e956926a3a1e',
+    messagingSenderId: '499482163771',
+    projectId: 'ceylon-luxury-bedding',
+    authDomain: 'ceylon-luxury-bedding.firebaseapp.com',
+    storageBucket: 'ceylon-luxury-bedding.firebasestorage.app',
+    measurementId: 'G-BF06B11EV7',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAHW-SzLIOEUzTxjEGUHey17TXJlWF7yUU',
-    appId: '1:784809884242:android:9728ac058b00e22563bd8b',
-    messagingSenderId: '784809884242',
-    projectId: 'sudarma-apparel',
-    storageBucket: 'sudarma-apparel.firebasestorage.app',
+    apiKey: 'AIzaSyCm3W6oEi7DwaQSEtjig8ZrQJJG9c4VGFM',
+    appId: '1:499482163771:android:c2cf30bb99ef726f6a3a1e',
+    messagingSenderId: '499482163771',
+    projectId: 'ceylon-luxury-bedding',
+    storageBucket: 'ceylon-luxury-bedding.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCgcX9hVeq4AxIY4dfbsoE6yEnCCaCmlDc',
-    appId: '1:784809884242:ios:585665f74352eb6d63bd8b',
-    messagingSenderId: '784809884242',
-    projectId: 'sudarma-apparel',
-    storageBucket: 'sudarma-apparel.firebasestorage.app',
+    apiKey: 'AIzaSyBJtuNp9LxKAOv8SW2Eiuqa87KMy6-Yu7Q',
+    appId: '1:499482163771:ios:fdbec6f3190d583b6a3a1e',
+    messagingSenderId: '499482163771',
+    projectId: 'ceylon-luxury-bedding',
+    storageBucket: 'ceylon-luxury-bedding.firebasestorage.app',
     iosBundleId: 'com.example.expense',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCgcX9hVeq4AxIY4dfbsoE6yEnCCaCmlDc',
-    appId: '1:784809884242:ios:585665f74352eb6d63bd8b',
-    messagingSenderId: '784809884242',
-    projectId: 'sudarma-apparel',
-    storageBucket: 'sudarma-apparel.firebasestorage.app',
+    apiKey: 'AIzaSyBJtuNp9LxKAOv8SW2Eiuqa87KMy6-Yu7Q',
+    appId: '1:499482163771:ios:fdbec6f3190d583b6a3a1e',
+    messagingSenderId: '499482163771',
+    projectId: 'ceylon-luxury-bedding',
+    storageBucket: 'ceylon-luxury-bedding.firebasestorage.app',
     iosBundleId: 'com.example.expense',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBKrxHhM03aSGeWJu7g7K0z8mzj507SKK8',
-    appId: '1:784809884242:web:990fed04fdc7e76763bd8b',
-    messagingSenderId: '784809884242',
-    projectId: 'sudarma-apparel',
-    authDomain: 'sudarma-apparel.firebaseapp.com',
-    storageBucket: 'sudarma-apparel.firebasestorage.app',
-    measurementId: 'G-MHNTDG8MX7',
+    apiKey: 'AIzaSyCWgAlhYfa4e3ihTDpZ5UGeZgkcro-HjHE',
+    appId: '1:499482163771:web:aca39c31a838207b6a3a1e',
+    messagingSenderId: '499482163771',
+    projectId: 'ceylon-luxury-bedding',
+    authDomain: 'ceylon-luxury-bedding.firebaseapp.com',
+    storageBucket: 'ceylon-luxury-bedding.firebasestorage.app',
+    measurementId: 'G-MEQ7HYJHDF',
   );
 
 }

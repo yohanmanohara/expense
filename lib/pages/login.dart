@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:expense/services/auth_services.dart';
+
 class Login extends StatelessWidget {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-   Login({super.key});
+  
+  Login({super.key});
 
   @override
   Widget build(BuildContext context) {
+   
+    bool isMobile = MediaQuery.of(context).size.width < 600;
+
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor:Colors.blue, // Mobile white, Desktop blue
       body: Center(
         child: Container(
-          width: 400,
+          width: isMobile ? 300:400,
           height: 520,
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
@@ -28,12 +33,18 @@ class Login extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              
-              Image.asset('assets/company.png', height: 82),
 
+              Row(
+                children: [
+                  Image.asset('assets/company.png', height: 82),
+                  const SizedBox(width: 10),
+                  Text('Ceylon Luxury Bedding', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.black87)),
+                ],
+              ),
+              // Image.asset('assets/company.png', height: 82),
+              // const SizedBox(width: 10),
+              // Text('Ceylon Luxury Bedding', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black87)),
               const SizedBox(height: 20),
-
-              
               const Text(
                 'Welcome Back',
                 style: TextStyle(
@@ -42,10 +53,7 @@ class Login extends StatelessWidget {
                   color: Colors.black87,
                 ),
               ),
-
               const SizedBox(height: 10),
-
-            
               TextFormField(
                 controller: _emailController,
                 decoration: InputDecoration(
@@ -65,10 +73,8 @@ class Login extends StatelessWidget {
                   contentPadding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
                 ),
               ),
-
+              
               const SizedBox(height: 10),
-
-             
               TextFormField(
                 obscureText: true,
                 controller: _passwordController,
@@ -89,10 +95,7 @@ class Login extends StatelessWidget {
                   contentPadding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
                 ),
               ),
-
               const SizedBox(height: 20),
-
-             
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
@@ -103,26 +106,20 @@ class Login extends StatelessWidget {
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
-
-
-                   onPressed: () async {
-                      await AuthService().signup(
-                        context: context,
-                        email: _emailController.text,
-                        password: _passwordController.text
+                  onPressed: () async {
+                    await AuthService().login(
+                      context: context,
+                      email: _emailController.text,
+                      password: _passwordController.text,
                     );
                   },
-
                   child: const Text(
                     'Login',
                     style: TextStyle(fontSize: 16, color: Colors.white),
                   ),
                 ),
               ),
-
               const SizedBox(height: 10),
-
-              // Google Sign-In Button
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
@@ -141,7 +138,7 @@ class Login extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.asset('assets/google.png', height: 24), // Google logo
+                      Image.asset('assets/google.png', height: 24),
                       const SizedBox(width: 10),
                       const Text(
                         'Sign in with Google',
