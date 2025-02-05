@@ -133,6 +133,7 @@ class Signup extends StatelessWidget {
       ),
       onPressed: () async {
        await AuthService().signup(
+          context: context,
           email: _emailController.text,
           password: _passwordController.text
         );
